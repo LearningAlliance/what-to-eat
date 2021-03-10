@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='body'>
+    <text class='target'>{{food}}</text>
+    <button id='choose' bindtap='chooseOne'>{{message}}</button>
+  </view>
+</view>
