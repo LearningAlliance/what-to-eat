@@ -6,7 +6,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "今天吃空气",
+    "navigationBarTitleText": "今天吃什么",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

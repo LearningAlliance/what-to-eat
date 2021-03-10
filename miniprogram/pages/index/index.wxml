@@ -1,7 +1,21 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='body'>
-    <text class='target'>{{food}}</text>
-    <button id='choose' bindtap='chooseOne'>{{message}}</button>
+  <view class="main-container">
+    <!-- 展示标题 -->
+    <view class="title">今天吃什么味道的空气？</view>
+    <view class="food-content">{{food}}</view>
+    <!-- <canvas type="webgl" id="webgl" class="food-content" bindtouchstart="touchStart"
+  bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas> -->
   </view>
+  <!-- 按钮区域 -->
+  <view wx:if="{{!loading}}" class="footer-container">
+    <button id='submit' bindtap='submit' class='footer-btn'>开始</button>
+  </view>
+  <view wx:else class="footer-container">
+    <button id='submit' bindtap='submit' class='footer-btn end'>停止</button>
+  </view>
+  <!-- 占位区域 -->
+  <view class="footer-extra-container"></view>
 </view>
+<!-- <canvas type="webgl" id="webgl" style="width: 100%; height: 450px;" bindtouchstart="touchStart"
+  bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas> -->
